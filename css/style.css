@@ -10,11 +10,20 @@ body {
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
 }
+button {
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #484848
+}
 .background {
     display: inline;
     position: absolute;
     left: -60px;
     top:150px;
+    z-index: -1;
+}
+.box {
+    height: 666px;
+    width: 100%;
 }
 .header {
     width: 100%;
@@ -52,7 +61,7 @@ body {
     font-size: 19px;
     margin: 0;
 }
-button {
+.banner button {
     margin: 30px 0;
     display: inline-block;
     color: #484848;
@@ -64,4 +73,58 @@ button {
     text-decoration: none;
     font-size: 16px;
     background: transparent;
+}
+.bottomcontainer {
+    width: 100%;
+    background-color: #edefec;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.bottomcontainer h3 {
+    font-size: 14px;
+    margin-top: 0px;
+}
+.bottomcontainer h2 {
+    margin-bottom: 5px;
+}
+.bottomcontainer button {
+    width: 200px;
+    margin-top: 25px;
+    border: 1px solid;
+    border-color: rgba(72, 72, 72, 0.3);
+    background: white;
+    padding: 8px 0;
+}
+.upper {
+    width: 0 50%;
+}
+.upper img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin: 7px;
+}
+.frame {
+    display: inline-block;
+    position: relative;
+}
+.frame p {
+    text-align: center;
+    color: white;
+    display: inline;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+.lower {
+    width: 0 50%;
+}
+.lower img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin: 7px;
 }
